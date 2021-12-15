@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>LOLCAT CLOCK</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTodo.css">
+</head>
+
+<body>
+
+    <h2 id="head">Responsive Two Column Layout</h2>
+
+    <div class="row">
+        <div class="column">
+            <h2 class="todo-header">Today's Task</h2>
+            <div id="column-1">
+                <input type="text" id="userinput" placeholder="add a task">
+                <input type="time" id="userTime" value="22:15:00">
+                <!-- Time Selector -->
+                <button id="enter"> Enter</button>
+                <!-- Empty List -->
+                <div>
+                    <ul id="todo-content">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vl">
+        </div>
+        <div class="column">
+            <header>
+                <h1>LOLCAT CLOCK</h1>
+            </header>
+
+            <h4>
+                I CAN HAZ TIME?? <br>
+                <span id=" clock">Clock goes here</span>
+            </h4>
+
+            <img id="lolcatImage"
+                src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg"
+                alt="lolcat">
+            <div id="quote">
+                Hiii
+            </div>
+            <!-- <blockquote id="timeEvent">This is where time events are reported</blockquote> -->
+            <br>
+            <button id="partyTimeButton">Party!</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
