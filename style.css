@@ -79,7 +79,7 @@ h1, h2, h3, h6 {
 }
 h2{
   font-size: 40px;
-  color: antiquewhite;
+  /* color: antiquewhite; */
 }
 #lolcatImage {
   max-width:30em
