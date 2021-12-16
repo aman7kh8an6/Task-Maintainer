@@ -39,23 +39,6 @@ function createListElement() {
         li.classList.add("delete")
     }
 }
-setInterval(writeQuote, 1000);
-function writeQuote() {
-    var picQuote = document.getElementById("quote");
-    var currentTime = new Date();
-    var currtime = currentTime.getHours() + ":"
-        + currentTime.getMinutes();
-    console.log(currtime);
-    var i = 0;
-    while (i < arrTime.length) {
-        if (currtime === arrTime[i]) {
-            picQuote.innerHTML = arrTask[i];
-        }
-        i++;
-    }
-}
-
-
 
 function addListAfterClick() {
     if (inputLength() > 0) {
