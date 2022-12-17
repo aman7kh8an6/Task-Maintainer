@@ -1,47 +1,41 @@
-.todo-header{
-    font-size: 48px;
-}
-#userinput{
-    padding: 8px;
-}
-#enter{
-    padding: 8px;
-    margin-left: 12px;
-}
-.vl {
-    border-left: 6px solid black;
-    height: 800px;
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    margin-left: -3px;
-    top: 100px;
-}
-li{
-    background-color: burlywood;
-    margin: 5px;
-}
-li:hover{
-    background-color: rgb(138, 233, 233);
-}
-li > button {
-	font-weight: normal;
-	background: none;
-	border: none;
-	float: right;
-	color: #025f70;
-	font-weight: 800;
-    background-color: blanchedalmond;
-}
-.done {
-	background: #51DF70 !important;
-	color: #00891E;
+.todo-header {
+  font-size: 25px;
 }
 
 .delete {
-	display: none;
+  display: none;
 }
-#time-selector{
-    padding: 8px;
-    margin-left: 10px;
+#time-selector {
+  padding: 8px;
+  margin-left: 10px;
+}
+
+li {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  margin: 0.5em 0;
+  background: #dad2ca;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: 0.3s ease-out;
+}
+li > button {
+  font-weight: normal;
+  border: none;
+  float: right;
+  color: aliceblue;
+  font-weight: 800;
+  background-color: #254e58;
+  margin-left: 5px;
+}
+h6 {
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  font-weight: bold;
+}
+#completed-task > li {
+  background-color: lightgreen;
 }
