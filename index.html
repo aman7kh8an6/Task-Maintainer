@@ -1,59 +1,72 @@
 <html>
 
 <head>
-    <title>LOLCAT CLOCK</title>
+    <title>Task-Maintainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;310&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleTodo.css">
+   
 </head>
 
 <body>
 
-    <h2 id="head"> Task Maintainer</h2>
-
-    <div class="row">
-        <div class="column">
-            <h2 class="todo-header">Today's Task</h2>
+    <h2 id="head">Task Maintainer</h2>
             <div id="column-1">
-                <input type="text" id="userinput" placeholder="add a task">
-                <input type="time" id="userTime" value="22:15:00">
-                <!-- Time Selector -->
-                <button id="enter"> Enter</button>
-                <!-- Empty List -->
-                <div>
-                    <ul id="todo-content">
-                    </ul>
-                </div>
+                <!-- <h2 class="todo-header">Add Today's Task</h2> -->
+                <!-- <input type="text" id="userinput" placeholder="Add a task"> -->
+                <div class="row g-3">
+                    <div class="col">
+                        <form class="form-floating">
+                            <input id="userinput" type="email" class="form-control"  placeholder="name@example.com">
+                            <label for="floatingInputInvalid">Add a task</label>
+                          </form>
+                    </div>
+                    <div class="col">
+                        <input type="time" id="userTime" value="22:15:00">
+                    </div>
+
+                    <div class="col">
+                        <button id="enter" type="button" class="btn btn-secondary">Add</button>
+                    </div>
+                  </div>
+                
+                  
+                
             </div>
-        </div>
-        <div class="vl">
-        </div>
-        <div class="column">
-            <header>
-                <h1>LOLCAT CLOCK</h1>
-            </header>
+            
+            
 
-            <h4>
-                I CAN HAZ TIME?? <br>
-                <span id=" clock">Clock goes here</span>
-            </h4>
-
-            <img id="lolcatImage"
-                src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg"
-                alt="lolcat">
-            <div id="quote">
-                Hiii
+    <div class="container">
+        <div class="row">
+          <div class="col">
+              <h4> Task to Do</h4>
+            <div>
+                <ul id="todo-content">
+                </ul>
             </div>
-            <!-- <blockquote id="timeEvent">This is where time events are reported</blockquote> -->
-            <br>
-            <button id="partyTimeButton">Party!</button>
-
+          </div>
+          
+          <div class="col">
+            <h4> Completed Task </h4>
+            <div>
+                <ul id="completed-task">
+                </ul>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+
     <script src="script.js"></script>
-    <script src="script2.js"></script>
+   
 </body>
 
 </html>
